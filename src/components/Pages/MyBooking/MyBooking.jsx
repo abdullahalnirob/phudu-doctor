@@ -24,7 +24,7 @@ const MyBooking = () => {
     return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
   };
   const bookingData = useLoaderData();
-  // console.log(bookingData);
+  console.log(bookingData);
   const [myApp, setmyApp] = useState([]);
 
   useEffect(() => {

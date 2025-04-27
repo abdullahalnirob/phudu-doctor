@@ -17,7 +17,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/doctor/:id",
-        loader: () => fetch("./doctorData.json"),
+        loader: () => fetch("/doctorData.json"),
         element: <Doctor />,
       },
       {
@@ -30,7 +30,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/my-booking",
-        loader: () => fetch("./doctorData.json"),
+        loader: () => fetch("/doctorData.json"),
         element: <MyBooking />,
       },
     ],

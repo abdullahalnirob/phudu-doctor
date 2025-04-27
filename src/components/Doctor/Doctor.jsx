@@ -10,6 +10,7 @@ const Doctor = () => {
   };
 
   const doctor = data[indexId - 1];
+  
   const {
     doctorImage,
     name,
