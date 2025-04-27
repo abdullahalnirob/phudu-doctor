@@ -3,11 +3,11 @@ import logo from "../../assets/logo.png";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  const refes = () => {
-    if (location.pathname.startsWith("/doctor")) {
-      useNavigate("/my-booking");
-    }
-  };
+  // const refes = () => {
+  //   if (location.pathname.startsWith("/doctor")) {
+  //     useNavigate("/my-booking");
+  //   }
+  // };
   return (
     <nav className="bg-white py-4 shadow-md">
       <div className="container mx-auto flex items-center justify-between">
@@ -20,7 +20,7 @@ const Navbar = () => {
             Home
           </NavLink>
           <NavLink
-            onClick={refes}
+            // onClick={refes}
             to="/my-booking"
             className="text-gray-600 hover:text-blue-500"
           >

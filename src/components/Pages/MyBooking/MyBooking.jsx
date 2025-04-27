@@ -29,7 +29,7 @@ const MyBooking = () => {
 
   useEffect(() => {
     const bookastoreData = getDoctor();
-    const myAppoin = bookingData.filter((book) =>
+    const myAppoin = bookingData?.filter((book) =>
       bookastoreData.includes(book.id)
     );
     setmyApp(myAppoin);
@@ -42,40 +42,42 @@ const MyBooking = () => {
 
   return (
     <div className="px-20">
-      <div className="flex items-center justify-center my-5">
-        <BarChart
-          width={1000}
-          className="w-full"
-          height={300}
-          data={myApp.map((doc) => ({
-            name: doc.name,
-            uv: parseInt(doc.consultationFee), // ফি সংখ্যায় কনভার্ট করছি
-          }))}
-          margin={{
-            top: 20,
-            right: 30,
-            left: 20,
-            bottom: 5,
-          }}
-        >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Bar
-            dataKey="uv"
-            fill="#8884d8"
-            shape={<TriangleBar />}
-            label={{ position: "top" }}
+      {myApp.length !== 0 && (
+        <div className="flex items-center justify-center my-5">
+          <BarChart
+            width={1000}
+            className="w-full"
+            height={300}
+            data={myApp.map((doc) => ({
+              name: doc.name,
+              uv: parseInt(doc.consultationFee),
+            }))}
+            margin={{
+              top: 20,
+              right: 30,
+              left: 20,
+              bottom: 5,
+            }}
           >
-            {myApp.map((entry, index) => (
-              <Cell
-                key={`cell-${index}`}
-                fill={colors[index % colors.length]}
-              />
-            ))}
-          </Bar>
-        </BarChart>
-      </div>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Bar
+              dataKey="uv"
+              fill="#8884d8"
+              shape={<TriangleBar />}
+              label={{ position: "top" }}
+            >
+              {myApp.map((entry, index) => (
+                <Cell
+                  key={`cell-${index}`}
+                  fill={colors[index % colors.length]}
+                />
+              ))}
+            </Bar>
+          </BarChart>
+        </div>
+      )}
 
       <div className="text-center py-10">
         <h1 className="font-bold text-3xl">My Today Appointments</h1>
