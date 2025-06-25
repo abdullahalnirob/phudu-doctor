@@ -1,12 +1,57 @@
-# React + Vite
+# ⚡ Phudu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Phudu** is a modern, responsive doctor appointment booking web application that allows patients to browse doctors by specialty, view details, and book appointments online — all in a few clicks. It’s designed to simplify the healthcare experience by connecting patients with trusted medical professionals.
 
-Currently, two official plugins are available:
+🌐 **Live Site**: [https://phudu.vercel.app/](https://phudu.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ Built with React 19 and Vite 6
+- 🎨 Styled with Tailwind CSS 4
+- 📊 Interactive charts using Recharts
+- 🔔 Toast notifications with `react-toastify`
+- 🔢 Animated counters using `react-countup`
+- 🧭 SPA routing with React Router v7
+- 💡 Modern icons via `lucide-react`
+- 🧼 Code linting with ESLint
+
+---
+
+## 🖼️ Screenshot
+
+> *(Add a screenshot here for better visual preview — optional but recommended)*  
+> Example:
+> ![Phudu Screenshot](./screenshot.png)
+
+---
+
+## 🛠️ Tech Stack
+
+| Category       | Tools Used                                     |
+|----------------|------------------------------------------------|
+| Frontend       | React 19, Vite 6, Tailwind CSS 4               |
+| Routing        | React Router DOM v7                            |
+| Charts         | Recharts                                       |
+| Notifications  | React Toastify                                 |
+| Animations     | React CountUp                                  |
+| Icons          | Lucide React                                   |
+| Linting        | ESLint with React plugins                      |
+
+---
+
+## 📁 Project Structure
+
+```bash
+phudu/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   └── main.jsx
+├── index.html
+├── tailwind.config.js
+├── vite.config.js
+└── package.json
