@@ -19,13 +19,6 @@
 
 ---
 
-## 🖼️ Screenshot
-
-> *(Add a screenshot here for better visual preview — optional but recommended)*  
-> Example:
-> ![Phudu Screenshot]([./screenshot.png](https://i.ibb.co/jvDNgy4d/Screenshot-2025-06-25-105913.png))
-
----
 
 ## 🛠️ Tech Stack
 
@@ -49,9 +42,11 @@ phudu/
 ├── src/
 │   ├── assets/
 │   ├── components/
-│   ├── pages/
+│   ├── Router/
+│   ├── utils/
+│   ├── App.jsx/
+│   ├── index.css/
 │   └── main.jsx
 ├── index.html
-├── tailwind.config.js
 ├── vite.config.js
 └── package.json
