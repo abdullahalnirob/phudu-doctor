@@ -50,3 +50,13 @@ phudu/
 ├── index.html
 ├── vite.config.js
 └── package.json
+```
+## Installation
+
+```
+git clone https://github.com/abdullahalnirob/phudu.git
+cd phudu
+npm install
+npm run dev
+
+```
