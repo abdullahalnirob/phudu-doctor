@@ -8,9 +8,12 @@
 
 ## 🚀 Features
 
+- 🧑‍⚕️ **Explore doctors** by specialty, name, and profile
+- 📅 **Book appointments** with available doctors in real time
+- 📈 **View doctor statistics** and availability using charts
 - ⚛️ Built with React 19 and Vite 6
-- 🎨 Styled with Tailwind CSS 4
-- 📊 Interactive charts using Recharts
+- 🎨 Styled with Tailwind CSS 4 and fully responsive design
+- 📊 Interactive charts using **Recharts**
 - 🔔 Toast notifications with `react-toastify`
 - 🔢 Animated counters using `react-countup`
 - 🧭 SPA routing with React Router v7
