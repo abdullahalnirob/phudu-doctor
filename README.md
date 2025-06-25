@@ -23,7 +23,7 @@
 
 > *(Add a screenshot here for better visual preview — optional but recommended)*  
 > Example:
-> ![Phudu Screenshot](./screenshot.png)
+> ![Phudu Screenshot]([./screenshot.png](https://i.ibb.co/jvDNgy4d/Screenshot-2025-06-25-105913.png))
 
 ---
 
